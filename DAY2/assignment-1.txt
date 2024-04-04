@@ -1,0 +1,50 @@
+1. What is Views in MySql?  Why do we use Views? How to create views in MySql?
+	Views in MySQL are virtual tables that are dynamically generated based on a predefined query.They do not store data themselves but provide a way to present data stored in one or more tables in a structured format.Views can be used to simplify complex queries.
+	Syntax :- CREATE VIEW view_name followed by a query.
+
+
+2. Create a stored procedures that will display the employee details based on the given dept name.  Dept name is the input for stored procedure. 
+	DELIMITER //
+	CREATE PROCEDURE GetEmployeeDetailsByDept(IN deptName VARCHAR(100))
+	BEGIN
+    		SELECT * FROM employees WHERE department = deptName;
+	END //
+	DELIMITER ;
+
+
+3. Create stored procedures that get employees count who are having greater salary than the average of all salaries.  Return employees count  as output variable. 
+	DELIMITER //
+	CREATE PROCEDURE GetEmployeesCountAboveAvgSalary(OUT empCount INT)
+	BEGIN
+    		DECLARE avgSal FLOAT;
+    		SELECT AVG(salary) INTO avgSal FROM employees;
+    		SELECT COUNT(*) INTO empCount FROM employees WHERE salary > avgSal;
+	END //
+	DELIMITER ;
+
+
+4. Create stored procedures that insert the data into emp table. Take all the required values as input parameters.
+	DELIMITER //
+	CREATE PROCEDURE InsertIntoEmp(
+    		IN emp_id INT,
+    		IN emp_name VARCHAR(100),
+    		IN emp_salary FLOAT,
+    		IN emp_dept VARCHAR(100)
+	)
+	BEGIN
+    		INSERT INTO employees(emp_id, emp_name, emp_salary, emp_dept)
+    		VALUES(emp_id, emp_name, emp_salary, emp_dept);
+	END //
+	DELIMITER ;
+
+
+5. Create View to return employee job and corresponding max salary in each job.
+	CREATE VIEW JobMaxSalaryView AS
+	SELECT job_title, MAX(salary) AS max_salary
+	FROM employees
+	GROUP BY job_title;
+  
+
+6. How to use distinct option in select query? 
+	The DISTINCT keyword is used in a SELECT statement to return only distinct (unique) values.
+	Syntax :- SELECT DISTINCT col_name FROM table_name;
