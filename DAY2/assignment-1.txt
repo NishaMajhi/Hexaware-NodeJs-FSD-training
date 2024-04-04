@@ -48,3 +48,43 @@
 6. How to use distinct option in select query? 
 	The DISTINCT keyword is used in a SELECT statement to return only distinct (unique) values.
 	Syntax :- SELECT DISTINCT col_name FROM table_name;
+
+
+7. Create  ProductsLogs table to store the following information. 
+		 Eg:	  Id, Operation, ProductId, ProductName,  Date, Time,  Message 
+		
+		Hint: Target the Products table. 
+
+	CREATE TABLE ProductsLogs (
+    		Id INT PRIMARY KEY AUTO_INCREMENT,
+    		Operation VARCHAR(10),
+    		ProductId INT,
+    		ProductName VARCHAR(100),
+    		Date DATE,
+    		Time TIME,
+    		Message TEXT
+	);	
+
+		
+8. Create a AFTER INSERT trigger operation  and  insert the corresponding details ProductsLogs table. 
+	DELIMITER $$
+	CREATE TRIGGER After_Product_Insert
+	AFTER INSERT ON Products
+	FOR EACH ROW
+	BEGIN
+    		INSERT INTO ProductsLogs (Operation, ProductId, ProductName, Date, Time, Message)
+    		VALUES ('INSERT', NEW.Id, NEW.Name, CURDATE(), CURTIME(), 'Product added.');
+	END$$
+	DELIMITER ;
+
+
+9. Create  a AFTER DELETE trigger operation  and  insert the corresponding details ProductsLogs table with corresponding message. 
+	DELIMITER $$
+	CREATE TRIGGER After_Product_Delete
+	AFTER DELETE ON Products
+	FOR EACH ROW
+	BEGIN
+    		INSERT INTO ProductsLogs (Operation, ProductId, ProductName, Date, Time, Message)
+    		VALUES ('DELETE', OLD.Id, OLD.Name, CURDATE(), CURTIME(), 'Product deleted.');
+	END$$
+	DELIMITER ;
