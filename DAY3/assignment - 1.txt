@@ -1,0 +1,26 @@
+3.  Find some details about the following things about node:
+	a. Find some more details about callbacks
+	   In JavaScript, a callback is a function passed as an argument to another function.Callbacks help in handling asynchronous tasks without blocking the execution of the program.
+	b. Check the following methods in javascript where callbacks are involved:
+	   a. map() :- creates a new array from calling a function for every array element. map() does not execute the function for empty elements.
+	   b. findIndex() :- return index of first element that pass condition else -1
+	   c. find() :- return value of first element that pass condition else undefined
+	   d. filter() :- return array of element that pass condition else empty array
+        c. What kind of applications we can create using node js?
+	   - Real-time web applications
+	   - Single-page applications
+ 	   - RESTful APIs
+	d. Find out more details  about "Event Loops" in node js 
+	   The event loop is a fundamental concept in Node.js that allows it to perform non-blocking I/O operations. It continuously checks the call stack and the event queue for tasks to execute. When the call stack is empty, the event loop checks if there are any tasks in the event queue, if so, it moves them to the call stack for execution.
+
+
+
+4.  What are differences between MySql and MongoDb? 
+    - MySQL is a relational database management system (RDBMS), while MongoDB is a NoSQL database.
+    - MySQL stores data in tables, while MongoDB stores data in JSON-like documents. 
+
+
+
+5.  What is "let"  keyword in javascript? Diff. between  "var" and "left" keyword?
+    - let is a keyword introduced in ECMAScript 6 (ES6) for declaring variables.
+    - The main difference between var and let is their scope: var has function scope or global scope, while let has block scope. This means variables declared with var are accessible throughout the function in which they are declared, while variables declared with let are only accessible within the block they are declared in.
