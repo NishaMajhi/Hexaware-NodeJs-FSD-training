@@ -1,0 +1,35 @@
+a. What is Regular expression in JavaScript?
+b. How to use Regular Expressions in JavaScript?
+   A regular expression (regex or regexp) is a sequence of characters that forms a search pattern, used mainly for pattern matching within strings.
+   Syntax : let regex1 = /pattern/;
+            let regex2 = new RegExp("pattern");
+
+   Some match character:
+     1. `.` -> matches single character
+     2. `^` -> matches at the begining of the string
+     3. `$` -> matches at the end of the string
+     4. `*`, `+`, `?` -> indicate number of occurances
+     5. `[]` -> a character class
+     6. `|` -> mathces either left or right sode pattern
+
+   Regular expressions can be used for various tasks, such as:
+     1. Pattern Matching 2. Validation 3. Search and Replace 4. Text Extraction
+
+   JavaScript provides various methods to work with regular expressions:
+     1. test(): returns true or false.
+	let result = regex.test("string");
+     2. exec(): returns an array containing the matched substrings or null if no match is found.
+	let matchArray = regex.exec("string");
+     3. match(): Retrieves the matches when matching a string against a regular expression.
+	let matchArray = "string".match(regex);
+     4. search(): returns the position of the match (-1 if not found).
+	let position = "string".search(regex);
+     5. replace(): returns a new string where the specified values are replaced.
+	let newString = "string".replace(regex, "replacedString");
+
+
+c. map(), filter(), find(), findIndex()
+   a. map() :- creates a new array from calling a function for every array element. map() does not execute the function for empty elements.
+   b. findIndex() :- return index of first element that pass condition else -1
+   c. find() :- return value of first element that pass condition else undefined
+   d. filter() :- return array of element that pass condition else empty array
