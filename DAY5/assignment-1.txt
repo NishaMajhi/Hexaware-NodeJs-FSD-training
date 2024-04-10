@@ -1,0 +1,48 @@
+1. What is the regular expressions to validate vehicle registration number (Eg: TS10AB1234 )
+let vehicleRegex = /^[A-Z]{2}\d{2}[A-Z]{2}\d{4}$/;
+
+
+
+2. What are data structure? Why do we need?
+Data structures are used to organize and store data so that it can be accessed and manipulated efficiently.
+Here are some key reasons why we need data structures:
+
+a. Organization: Data structures provide a systematic way to organize and structure data so that it can be managed efficiently. 
+
+b. Efficient Data Access: Different data structures offer different access methods, allowing for efficient retrieval of data. 
+
+c. Efficient Operations: Data structures are designed to support efficient operations such as insertion, deletion, searching, and sorting. 
+
+d. Memory Management: Data structures help manage memory efficiently by allocating and deallocating memory dynamically as needed. This helps minimize memory wastage and improves the utilization of available memory resources.
+
+e. Algorithm Design: Understanding different data structures allows us to design and implement algorithms more effectively.
+
+f. Abstraction and Encapsulation: Data structures provide abstraction, allowing users to focus on the functionality of operations rather than the underlying implementation details.
+
+g. Optimization: Choosing the right data structure for a specific problem can lead to significant optimization in terms of time and space complexity. 
+
+
+
+3. What are the applications of stack and queue in real-time applications?
+Stack :- LIFO (Last-in-first-out)
+Queue :- FIFO (First-in-first-out)
+
+Applications of Stacks:
+
+a. Function Call Stack: the function call stack is a stack data structure used to store information about the active function calls.
+
+b. Undo/Redo Operations: Many applications, such as text editors, image editors, and IDEs, use stacks to implement undo and redo functionalities. Each action performed by the user is pushed onto the stack, allowing the user to revert to previous states by popping actions off the stack.
+
+c. Expression Evaluation: Stacks are commonly used in compilers and interpreters to evaluate arithmetic expressions. 
+
+d. Browser History: Web browsers use a stack to keep track of the user's browsing history. Each visited webpage is pushed onto the stack, allowing users to navigate backward and forward through their browsing history.
+
+Applications of Queues:
+
+a. Task Scheduling: Queues are commonly used in task scheduling systems to manage the execution of tasks or jobs. For example, in operating systems, queues are used to schedule processes for execution based on priorities or other criteria.
+
+b. Print Queue: In computer systems, print queues are used to manage print jobs sent to printers.
+
+c. Message Queues: Message queues are used for inter-process communication (IPC) and asynchronous messaging between different components or systems. They facilitate communication by allowing messages to be sent and received in a first-in-first-out (FIFO) order.
+
+d. Buffering: Queues are often used as buffers in networking and data processing systems to store incoming data temporarily. This helps smooth out fluctuations in data rates and prevents data loss or overflow.
