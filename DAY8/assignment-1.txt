@@ -1,0 +1,25 @@
+1.What is Relative Path,Absolute Path and Physical Path?
+
+Relative Path:
+A relative path specifies the location of a file or directory with respect to the current directory.
+Absolute Path:
+An absolute path specifies the exact location of a file or directory from the root directory of the file system. 
+Physical Path:
+A physical path is similar to an absolute path, but it refers specifically to the physical location of a file or directory on a storage device.
+
+2.What is __filename,and__dirnameinnodejs?
+__filename: This variable contains the absolute path to the current file.
+__dirname: This variable contains the absolute path to the directory where the currently executing script resides. It provides the directory name without the filename.
+
+
+3.Find details about following methods:
+1.JSON.stringify()
+The JSON.stringify() method converts a JavaScript value to a JSON string.
+Eg: (JSON.stringify({ x: 1, y: 2 })); // Expected output: '{"x":1,"y":2}'
+
+2.JSON.parse()
+The JSON.parse() method parses a JSON string.
+Eg: 
+const json = '{"result":hello, "count":2343}';
+const obj = JSON.parse(json);
+console.log(obj);// Expected output:{ result: hello, count: 2343 }
