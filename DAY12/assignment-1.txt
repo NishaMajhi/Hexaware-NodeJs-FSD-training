@@ -1,0 +1,33 @@
+1. What is Testing in Software Development? Why do we do testing?
+	Testing in software development is the process of evaluating a software application or system to detect defects and ensure that it meets specified requirements. It involves executing the software under controlled conditions and observing its behavior to identify any discrepancies between expected and actual results.
+
+We conduct testing for several reasons:
+
+a. Quality Assurance: Testing helps ensure that the software meets quality standards and functions as intended.
+b. Bug Detection: It helps identify defects or bugs in the software, allowing developers to fix them before the software is released to users.
+c. Validation: Testing verifies that the software meets the requirements and specifications provided by stakeholders.
+d. Risk Mitigation: By identifying and fixing issues early in the development process, testing helps mitigate the risk of costly errors in production.
+e. Improving Maintainability: Properly tested code tends to be more modular and easier to maintain, as it often follows best practices and is well-documented.
+
+
+2. What is Unit Testing? 
+	Unit testing is a type of testing where individual units or components of a software application are tested in isolation. A unit typically refers to the smallest testable part of an application, such as a function, method, or class. Unit tests are written and executed by developers during the development process, and they focus on testing the functionality of these individual units.
+
+
+
+3. What are benefits of Unit testing?
+Benefits of unit testing include:
+
+a. Early Bug Detection: Unit tests help identify bugs early in the development cycle, making them easier and cheaper to fix.
+b. Regression Testing: Unit tests serve as a safety net, allowing developers to refactor code with confidence by ensuring that existing functionality remains intact.
+c. Documentation: Unit tests can serve as living documentation, providing examples of how to use individual components of the software.
+d. Improved Design: Writing unit tests often leads to more modular and decoupled code, which can improve the overall design and maintainability of the software.
+e. Faster Development: While writing unit tests initially adds time to the development process, it can ultimately speed up development by reducing the time spent debugging and fixing issues later on.
+
+
+4. What is AAA in Unit Testing?
+	AAA in unit testing stands for Arrange, Act, and Assert. It's a common pattern used to structure unit tests:
+
+a. Arrange: In this phase, you set up the preconditions or state necessary for the test. This might involve creating objects, initializing variables, or preparing the environment for the test.
+b. Act: This is where you invoke the method or behavior that you want to test.
+c. Assert: Finally, you verify that the outcome of the test matches your expectations. You check whether the method under test produced the expected results or whether it had the expected side effects.
