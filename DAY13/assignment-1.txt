@@ -1,0 +1,37 @@
+1. What is API in Web Application?
+	An API (Application Programming Interface) in a web application is a set of rules and protocols that allows different software applications to communicate with each other. In the context of web applications, APIs are often used to enable interaction between a web server and client-side applications, allowing them to exchange data and perform various actions.
+
+ 
+2. What is the role of web server in Web application?
+	The role of a web server in a web application is to handle incoming requests from clients (such as web browsers) and respond with the appropriate resources or data. It serves web pages, processes requests, executes application logic, and communicates with other servers or databases as needed.
+
+
+3. What are the http verbs? 
+	HTTP (Hypertext Transfer Protocol) verbs, also known as HTTP methods, are actions that can be performed on a web server. The commonly used HTTP verbs include:
+a. GET: Retrieves data from the server.
+b. POST: Submits data to the server to create a new resource.
+c. PUT: Updates an existing resource on the server.
+d. DELETE: Removes a resource from the server.
+e. PATCH: Partially updates a resource.
+f. OPTIONS: Retrieves the supported HTTP methods and other options for a resource.
+g. HEAD: Retrieves the headers for a resource without the body content.
+
+
+4. Which http verbs are using in Web API?
+	In Web API development, various HTTP verbs are used to perform actions on resources exposed by the API. The choice of HTTP verbs depends on the type of operation being performed. Commonly used HTTP verbs in Web APIs include GET, POST, PUT, DELETE, and PATCH. These verbs map to CRUD (Create, Read, Update, Delete) operations, allowing clients to interact with resources via HTTP requests.
+
+
+5. What are the http status codes?  Study on 4XX and 5XX status codes?
+	HTTP status codes are standard response codes returned by a web server in response to a client's request. HTTP status codes are categorized into five classes: 1XX (Informational), 2XX (Success), 3XX (Redirection), 4XX (Client Error), and 5XX (Server Error).
+	
+	4XX status codes indicate client errors, meaning the client's request cannot be fulfilled due to some error on the client's side. Examples include:
+a. 400 Bad Request: The server cannot process the request due to malformed syntax or invalid parameters.
+b. 401 Unauthorized: The request requires authentication, and the client failed to provide valid credentials.
+c. 403 Forbidden: The server understood the request, but the client does not have permission to access the requested resource.
+d. 404 Not Found: The requested resource could not be found on the server.
+
+	5XX status codes indicate server errors, meaning the server encountered an unexpected condition that prevented it from fulfilling the request. Examples include:
+a. 500 Internal Server Error: A generic error message indicating that something went wrong on the server.
+b. 502 Bad Gateway: The server received an invalid response from an upstream server while attempting to fulfill the request.
+c. 503 Service Unavailable: The server is temporarily unable to handle the request due to overload or maintenance.
+d. 504 Gateway Timeout: The server did not receive a timely response from an upstream server while attempting to fulfill the request.
