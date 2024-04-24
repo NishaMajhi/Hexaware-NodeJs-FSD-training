@@ -1,0 +1,37 @@
+1. What is MVC?
+	MVC (Model-View-Controller) is a software architectural pattern commonly used in web development. It separates the application into three interconnected components:
+
+Model: Represents the data and business logic of the application. It interacts with the database, processes data, and responds to requests for information about its state.
+
+View: Represents the presentation layer of the application. It displays the data to the user and handles user interface logic. Views are typically responsible for generating HTML, CSS, and client-side scripts.
+
+Controller: Acts as an intermediary between the Model and the View. It receives user input, processes requests, and updates the Model accordingly. It then selects an appropriate View to render the response to the user.
+
+2. How to implement MVC in Express JS?
+	Implementing MVC in Express.js: In Express.js, you can implement MVC by organizing your code into separate modules or directories for Models, Views, and Controllers. Here's a basic example:
+Create separate files or directories for Models, Views, and Controllers.
+Define our data models in the Model files, including methods to interact with the database.
+Implement route handlers in the Controller files to handle incoming requests, interact with the Models, and render appropriate Views.
+Define Views using template engines to render dynamic content based on data provided by the Controllers.
+
+3. Why do we need view engines in MVC?
+	Need for View Engines in MVC: View engines are necessary in MVC to separate the presentation logic from the application logic. They allow you to generate HTML dynamically based on data from the Model and Controller. View engines also provide features like template inheritance, partials, and helpers to streamline the process of generating HTML.
+
+4. What are the examples of view engines? 
+Examples of View Engines:
+a. Pug (formerly known as Jade): A clean, whitespace-sensitive syntax for writing HTML templates in b. JavaScript. It offers features like mixins and includes for code reuse.
+b. Handlebars: A simple and ergonomic templating engine that uses mustache-like syntax. It allows for the creation of reusable templates and partials.
+c. EJS (Embedded JavaScript): Allows embedding JavaScript code directly into HTML templates. It provides a familiar syntax for developers who are accustomed to writing JavaScript.
+d. Mustache: A logic-less template engine that allows you to write templates in plain text with placeholders for variables. It supports multiple programming languages and can be used with JavaScript via mustache.js.
+
+5. What is process object in Node JS?
+	In Node.js, the process object is a global object that provides information and control over the current Node.js process. It allows you to access various information about the running process, such as environment variables, command-line arguments, and exit codes. Additionally, it provides methods for controlling the process, like exiting the process or changing its title.
+
+Some commonly used properties and methods of the process object include:
+
+a. process.argv: An array containing the command-line arguments passed to the Node.js process. The first element (process.argv[0]) is always the path to the Node.js executable, and the second element (process.argv[1]) is the path to the script being executed. The subsequent elements are the command-line arguments.
+b. process.env: An object containing the user environment. It provides access to environment variables such as process.env.HOME or process.env.PATH.
+c. process.exit([code]): Exits the current Node.js process with the specified exit code. If no exit code is provided, the process exits with code 0 (indicating success).
+d. process.cwd(): Returns the current working directory of the Node.js process.
+e. process.pid: Returns the process ID of the Node.js process.
+f. process.title: Gets or sets the title of the current process. This can be useful for distinguishing different Node.js processes in process listings.
