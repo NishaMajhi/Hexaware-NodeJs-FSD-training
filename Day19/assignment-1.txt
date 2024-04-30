@@ -1,0 +1,28 @@
+1. What is Microservice? 
+	A microservice is an architectural style that structures an application as a collection of loosely coupled, independently deployable services. Each microservice represents a small, specialized piece of functionality within a larger software application. These services are typically organized around business capabilities and communicate with each other over well-defined APIs. Microservices promote flexibility, scalability, and rapid deployment by breaking down complex applications into smaller, manageable services.
+  
+
+2. Diff.  between Monolithic   Arch.  vs  Microservice Arch?
+
+Monolithic Architecture:
+a. Monolithic architecture refers to a traditional approach where the entire application is built as a single unit.
+b. In monolithic architecture, all components (UI, business logic, data access layer, etc.) are tightly coupled and packaged together.
+c. Scaling a monolithic application involves replicating the entire application, even if only certain components require more resources.
+d. Development, testing, and deployment of monolithic applications are typically more straightforward but can become challenging as the application grows in size and complexity.
+
+Microservice Architecture:
+a. Microservice architecture breaks down the application into smaller, loosely coupled services.
+b. Each microservice is responsible for a specific business function and can be developed, deployed, and scaled independently.
+c. Services communicate with each other through APIs, often using lightweight protocols like HTTP/REST or messaging queues.
+d. Scaling in a microservices architecture is more granular, allowing specific services to be scaled based on demand.
+e. Development teams can work on individual microservices independently, which promotes agility, flexibility, and easier maintenance.
+
+
+3. Advantages of Microservice?
+Microservices offer several advantages over monolithic architectures:
+a. Scalability: Each microservice can be scaled independently based on demand, allowing efficient resource utilization.
+b. Flexibility and Agility: Microservices enable rapid development, deployment, and updates. Teams can work on different services simultaneously without interfering with each other.
+c. Fault Isolation: A failure in one microservice typically doesn’t bring down the entire application, as other services can continue to function.
+d. Technology Diversity: Different services within a microservices architecture can use different technologies and programming languages, allowing teams to choose the best tools for each job.
+e. Ease of Maintenance: Smaller, focused services are easier to understand, update, and maintain compared to large, monolithic applications.
+f. Improved Resilience and Availability: Microservices can be designed for resilience, with features like circuit breakers and graceful degradation, improving overall application availability.
